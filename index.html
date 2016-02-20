@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <meta charset="utf-8" />
+    <title>Healthcare Data Visualization</title>
+    
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css" />
+
+    <script type="text/javascript" src="jquery/js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/style.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    
+    <!--Unit Testing Script Start-->
+   <!-- <script type="text/javascript" src="test/filter.js"></script>-->
+    <!--Unit Testing Script End-->
+        
+  
+</head>
+<body >
+
+<div class="container">
+
+<div class="page-header">
+    <ul id="menu">
+    <li><a href="#signin">Sign In</a></li>
+    <li><a href="#signup">Sign Up</a></li>
+    <li><a href="#hospital/list">Hospitals</a></li>
+    <li><a href="#medication/list">Medications</a></li>
+    <li><a href="#dealer/list">Dealer</a></li>
+    <li><a href="#">Home</a></li>
+</ul> 
+</div>
+
+<!-- Registration form - START -->
+<div class="container">
+   <div ng-view>
+	</div>
+</div>
+<!-- Registration form - END -->
+
+</div>
+
+</body>
+</html>
