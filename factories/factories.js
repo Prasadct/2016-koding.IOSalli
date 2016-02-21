@@ -27,3 +27,7 @@ app.factory('Medication', function ($mongolabResourceHttp) {
 app.factory('Dealer', function ($mongolabResourceHttp) {
     return $mongolabResourceHttp('dealers');
 })
+
+app.factory('Dashboard', function ($mongolabResourceHttp) {
+    return $mongolabResourceHttp('dashboards');
+})
