@@ -87,4 +87,106 @@
 
 /*Menu Style Starts*/
 
+
+ul#menu {
+    padding: 0;
+}
+
+ul#menu li {
+    display: inline;
+}
+
+ul#menu li a {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px 4px 0 0;
+}
+
+ul#menu li a:hover {
+    background-color: orange;
+}
+
+/*Menu Style Ends*/
+
+/*Validations Start*/
+
+.error-msgs{
+    
+    color:red;
+}
+
+.green-textbox{
+    color:limegreen;
+    font-weight: bold;
+    
+}
+
+.blue-textbox{
+    color:deepskyblue;
+    font-weight: bold;
+}
+
+.myPanel{
+    
+    color:deepskyblue;
+}
+
+.background-template{
+    
+    background-color: #444d50;
+    border-radius: 2em;
+    color:deepskyblue;
+}
+
+.alert-danger{
+    
+    background-color: red;
+    border-radius: 0.5em;
+    color:white;
+    font-weight: bold;
+}
+
+.alert-warn{
+    background-color: orangered;
+    border-radius: 0.5em;
+    color:white;
+    font-weight: bold;
+}
+
+.alert-fine{
+    background-color: limegreen;
+    border-radius: 0.5em;
+    color:white;
+    font-weight: bold;
+}
+
+.box{
+    width:20px;
+    height:20px;
+}
+
 /*Validation End*/
+
+
+/*
+Datetime Picker Style
+*/
+.full button span {
+    background-color: limegreen;
+    border-radius: 32px;
+    color: black;
+  }
+  .partially button span {
+    background-color: orange;
+    border-radius: 32px;
+    color: black;
+  }
+
+
+   #mynetwork {
+            width: 600px;
+            height: 400px;
+            border: 1px solid lightgray;
+        }
