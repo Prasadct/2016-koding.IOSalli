@@ -79,6 +79,28 @@ app.config( ['$routeProvider', function($routeProvider) {
                 medications:function(Medication){return Medication.all();}
             }})
             
+            .when('/network/list', {
+                templateUrl: 'templates/network/listnetwork.html',
+                controller:'NetworkController',
+                resolve:{
+                         dashboards:function(Dashboard){return Dashboard.all();}
+                }  
+            })
+            
+              .when('/network/edit/:id', {
+                templateUrl: 'templates/dealer/editnetwork.html',
+                controller:'NetworkFormController',
+               resolve:{
+                     dashboard:function(Dashboard, $route){return Dashboard.getById($route.current.params.id);                     
+                     }
+                }       
+            })
+             .when('/network/new', {templateUrl:'templates/dealer/editnetwork.html', 
+             controller:'NetworkFormController', 
+             resolve:{
+                dashboard:function(Dashboard){return new Dashboard();}               
+            }})
+            
             
             .when('/dashboard/list', {
                 templateUrl: 'templates/dashboard/listdashboard.html',
