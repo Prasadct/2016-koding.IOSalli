@@ -1,0 +1,30 @@
+<h1>Hospital List</h1>
+<table class="table table-striped table-bordered table-hover">
+  <thead>
+    <tr>
+      <th>name</th>
+      <th>location</th>
+      <th>telephone</th>
+      <th>email</th>
+      <th>address</th>
+      
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="hospital in hospitals" ng-click="edit(hospital)">
+      <td>{{hospital.name}}</td>
+      <td>{{hospital.location}}</td>
+      <td>{{hospital.telephone}}</td>
+      <td>{{hospital.email}}</td>
+      <td>{{hospital.address}}</td>
+      
+      <td><a ng-href="#/hospital/edit/{{hospital.$id()}}"><i class="glyphicon glyphicon-edit"></i></a></td>
+    </tr>
+  </tbody> 
+</table>
+<div class="well">
+  <a class="btn btn-default" ng-href="#/hospital/new">New Hospital</a>
+</div>
+
+			

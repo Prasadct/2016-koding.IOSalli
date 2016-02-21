@@ -1,0 +1,78 @@
+<form name="form">
+  <legend>Edit form</legend>
+   <div class="form-group">
+       <label>Hospital</label>
+       <tags-input ng-model="dashboard.hospital" add-on-paste="true" display-property="name">
+       <auto-complete source="hospitalList"></auto-complete>
+       </tags-input>
+    
+   </div> 
+  <div class="form-group">
+       <label>Medication</label>
+       <tags-input ng-model="dashboard.medication" add-on-paste="true" display-property="name">
+       <auto-complete source="medicationList"></auto-complete>
+       </tags-input>
+    
+   </div> 
+    
+   </div> 
+  <div class="form-group">
+    <label>Amount</label>
+    <input type="text" ng-model="dashboard.amount" class="form-control">
+  </div>
+  <div class="form-group">
+       <label>Status</label>
+       <tags-input ng-model="dashboard.status" add-on-paste="true" display-property="name">
+       <auto-complete source="statusList"></auto-complete>
+       </tags-input>
+    
+   </div> 
+  
+  <!--<div class="form-group">
+    <label for="medications"> Medications </label>
+    <select name="medications" id="medications" ng-model="dealer.medications" class="form-control">
+      <option ng-repeat="option in medicationList" value="{{option._id}}">{{option.name}}</option>
+    </select>
+      
+  </div>-->
+  
+   <!--<div class="form-group">
+       <label>Medications</label>
+       <tags-input ng-model="dealer.medications" add-on-paste="true" display-property="name">
+       <auto-complete source="medicationList"></auto-complete>
+       </tags-input>
+    
+   </div> -->
+    <div class="form-group">
+    <label>Created Date</label>
+    <input type="text" class="form-control" uib-datepicker-popup ng-model="dashboard.createddate" is-open="popup2.opened" min-date="minDate" max-date="maxDate" datepicker-options="dateOptions" date-disabled="disabled(date, mode)" ng-required="true" close-text="Close" />
+    <span class="input-group-btn">
+    <button type="button" class="btn btn-default" ng-click="open2()"><i class="glyphicon glyphicon-calendar"></i></button>
+    </span>
+    </div>
+    
+     <div class="form-group">
+    <label>Renew Date</label>
+    <input type="text" class="form-control" uib-datepicker-popup ng-model="dashboard.renewdate" is-open="popup2renew.opened" min-date="minDaterenew" max-date="maxDaterenew" datepicker-options="dateOptionsrenew" date-disabled="disabledrenew(date, mode)" ng-required="true" close-text="Close" />
+    <span class="input-group-btn">
+    <button type="button" class="btn btn-default" ng-click="open2renew()"><i class="glyphicon glyphicon-calendar"></i></button>
+    </span>
+    </div>
+    
+    
+     <div class="form-group">
+    <label>Expire Date</label>
+    <input type="text" class="form-control" uib-datepicker-popup ng-model="dashboard.expiredate" is-open="popup2expire.opened" min-date="minDateexpire" max-date="maxDateexpire" datepicker-options="dateOptionsexpire" date-disabled="disabledexpire(date, mode)" ng-required="true" close-text="Close" />
+    <span class="input-group-btn">
+    <button type="button" class="btn btn-default" ng-click="open2expire()"><i class="glyphicon glyphicon-calendar"></i></button>
+    </span>
+    </div>
+    
+  
+  <div class="well">
+    <a class="btn btn-primary" ng-click="save()" ng-disabled="!hasChanges()||form.$invalid">Save</a>
+    <a class="btn btn-warning" ng-href="#/dashboard/list">Abandon</a>
+    <a class="btn btn-danger" ng-click="remove()" ng-disabled="!dashboard.$id()">Remove</a>
+  </div>
+   
+</form>

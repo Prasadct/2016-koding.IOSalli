@@ -1,0 +1,454 @@
+<div class="container">
+
+<h1 func1="loadFunction()">About</h1>
+    
+<superhero flight speed strength><p>Premier Travel Services</p> </superhero>
+    
+    
+<superhero speed><p>Faster Solutions</p> </superhero>    
+    
+    
+<!--<alertme done="logChore(chore)"></alertme>    --> 
+    
+    
+    
+<h2 enter leave>Subscribe</h2>
+<form name="subscribeform"><input class="form-control green-textbox" name="email"  ng-model="email" type="email" placeholder="Please Enter Your Email" required></input>
+
+<div ng-messages="subscribeform.email.$error">
+    <div class="form-control" ng-message="email">Invalid Email</div>
+  
+</div>
+    
+</form>    
+
+<!--<h3><i>Your Email Address</i> <strong>{{email|reverse}}</strong> </h3>-->
+<h2 enter1="myPanel" leave1="myPanel">Secret Key</h2>
+</div>
+
+
+<div class="container">
+    
+    <h2>$Parse Resource Usage</h2>
+    <a myClick ng-click="alertMe()">link</a>  
+    
+    
+</div>
+
+<div class="container">
+    <h2>Dumb Password</h2>
+   <dumbpassword></dumbpassword>
+</div>
+
+
+
+
+<div class="container">
+
+    <form name="sampleForm">
+    <input class="form-control blue-textbox" name="strongSecret" type="text" ng-model="strongSecret" strong-secret required placeholder="Please provide a strong secret">
+    <ul class="error-msgs" ng-messages="sampleForm.strongSecret.$error">
+        <li ng-message="numberValidator">Strong secret has to contain at least 1 number</li>
+        <li ng-message="uppercaseValidator">Strong secret has to contain at least 1 uppercase</li>
+        <li ng-message="sixCharactersValidator">Strong secret has to exactly 6 characters long</li>
+    </ul>
+</form>
+
+</div>
+
+<div class="container dynamicTile">
+    <div class="row">
+        <div class="col-sm-4 col-xs-8">
+            <div id="tile7" class="tile">
+                <div class="carousel slide" data-ride="carousel">
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="http://www.prepbootstrap.com/Content/images/template/metrotiles/1.png" class="img-responsive" />
+                        </div>
+                        <div class="item">
+                            <img src="http://www.prepbootstrap.com/Content/images/template/metrotiles/2.jpg" class="img-responsive" />
+                        </div>
+                        <div class="item">
+                            <img src="http://www.prepbootstrap.com/Content/images/template/metrotiles/3.png" class="img-responsive" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-2 col-xs-4">
+            <div id="tile8" class="tile">
+                <div class="carousel slide" data-ride="carousel">
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active text-center">
+                            <div>
+                                <span class="fa fa-spinner bigicon"></span>
+                            </div>
+                            <div class="icontext">
+                                Wait time
+                            </div>
+                            <div class="icontext">
+                                Low
+                            </div>
+                        </div>
+                        <div class="item text-center">
+                            <div>
+                                <span class="fa fa-spinner bigicon"></span>
+                            </div>
+                            <div class="icontext">
+                                Wait time
+                            </div>
+                            <div class="icontext">
+                                Avarage
+                            </div>
+                        </div>
+                        <div class="item text-center">
+                            <div>
+                                <span class="fa fa-spinner bigicon"></span>
+                            </div>
+                            <div class="icontext">
+                                Wait time
+                            </div>
+                            <div class="icontext">
+                                Low
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-2 col-xs-4">
+            <div id="tile9" class="tile">
+                <div class="carousel slide" data-ride="carousel">
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active text-center">
+                            <div>
+                                <span class="fa fa-book bigicon"></span>
+                            </div>
+                            <div class="icontext">
+                                Menu items
+                            </div>
+                            <div class="icontext">
+                                120
+                            </div>
+                        </div>
+                        <div class="item text-center">
+                            <div>
+                                <span class="fa fa-book bigicon"></span>
+                            </div>
+                            <div class="icontext">
+                                Menu items
+                            </div>
+                            <div class="icontext">
+                                200
+                            </div>
+                        </div>
+                        <div class="item text-center">
+                            <div>
+                                <span class="fa fa-book bigicon"></span>
+                            </div>
+                            <div class="icontext">
+                                Menu items
+                            </div>
+                            <div class="icontext">
+                                75
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 col-xs-8">
+            <div id="tile10" class="tile">
+                <div class="carousel slide" data-ride="carousel">
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active text-center">
+                            <div>
+                                <span class="fa fa-phone bigicon"></span>
+                            </div>
+                            <div class="icontext">
+                                917-2233-4433
+                            </div>
+                        </div>
+                        <div class="item text-center">
+                            <div>
+                                <span class="fa fa-phone bigicon"></span>
+                            </div>
+                            <div class="icontext">
+                                917-3322-1111
+                            </div>
+                        </div>
+                        <div class="item text-center">
+                            <div>
+                                <span class="fa fa-phone bigicon"></span>
+                            </div>
+                            <div class="icontext">
+                                917-1111-2222
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row ">
+        <div class="col-sm-2 col-xs-4">
+            <div id="tile1" class="tile">
+                <div class="carousel slide" data-ride="carousel">
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active text-center">
+                            <div>
+                                <span class="fa fa-bank bigicon"></span>
+                            </div>
+                            <div class="icontext">
+                                Capacity
+                            </div>
+                            <div class="icontext">
+                                170
+                            </div>
+                        </div>
+                        <div class="item text-center">
+                            <div>
+                                <span class="fa fa-bank bigicon"></span>
+                            </div>
+                            <div class="icontext">
+                                Capacity
+                            </div>
+                            <div class="icontext">
+                                320
+                            </div>
+                        </div>
+                        <div class="item text-center">
+                            <div>
+                                <span class="fa fa-bank bigicon"></span>
+                            </div>
+                            <div class="icontext">
+                                Capacity
+                            </div>
+                            <div class="icontext">
+                                440
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-2 col-xs-4">
+            <div id="tile2" class="tile">
+                <div class="carousel slide" data-ride="carousel">
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active text-center">
+                            <div>
+                                <span class="fa fa-lock bigicon"></span>
+                            </div>
+                            <div class="icontext">
+                                Available
+                            </div>
+                            <div class="icontext">
+                                0
+                            </div>
+                        </div>
+                        <div class="item text-center">
+                            <div>
+                                <span class="fa fa-unlock bigicon"></span>
+                            </div>
+                            <div class="icontext">
+                                Available
+                            </div>
+                            <div class="icontext">
+                                140
+                            </div>
+                        </div>
+                        <div class="item text-center">
+                            <div>
+                                <span class="fa fa-unlock bigicon"></span>
+                            </div>
+                            <div class="icontext">
+                                Available
+                            </div>
+                            <div class="icontext">
+                                22
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-2 col-xs-4">
+            <div id="tile3" class="tile">
+                <div class="carousel slide" data-ride="carousel">
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active text-center">
+                            <div>
+                                <span class="fa fa-star bigicon"></span>
+                            </div>
+                            <div class="icontext">
+                                Rating
+                            </div>
+                            <div class="icontext">
+                                9.5
+                            </div>
+                        </div>
+                        <div class="item text-center">
+                            <div>
+                                <span class="fa fa-star bigicon"></span>
+                            </div>
+                            <div class="icontext">
+                                Rating
+                            </div>
+                            <div class="icontext">
+                                7.9
+                            </div>
+                        </div>
+                        <div class="item text-center">
+                            <div>
+                                <span class="fa fa-star bigicon"></span>
+                            </div>
+                            <div class="icontext">
+                                Rating
+                            </div>
+                            <div class="icontext">
+                                9.9
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-2 col-xs-4">
+            <div id="tile4" class="tile">
+                <div class="carousel slide" data-ride="carousel">
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active text-center">
+                            <div>
+                                <span class="fa fa-cab bigicon"></span>
+                            </div>
+                            <div class="icontext">
+                                Cab
+                            </div>
+                            <div class="icontext">
+                                <span class="fa fa-check"></span>
+                            </div>
+                        </div>
+                        <div class="item text-center">
+                            <div>
+                                <span class="fa fa-cab bigicon"></span>
+                            </div>
+                            <div class="icontext">
+                                Cab
+                            </div>
+                            <div class="icontext">
+                                <span class="fa fa-close"></span>
+                            </div>
+                        </div>
+                        <div class="item text-center">
+                            <div>
+                                <span class="fa fa-cab bigicon"></span>
+                            </div>
+                            <div class="icontext">
+                                Cab
+                            </div>
+                            <div class="icontext">
+                                <span class="fa fa-check"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-2 col-xs-4">
+            <div id="tile5" class="tile">
+                <div class="carousel slide" data-ride="carousel">
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active text-center">
+                            <div>
+                                <span class="fa fa-language bigicon"></span>
+                            </div>
+                            <div class="icontext">
+                                International
+                            </div>
+                            <div class="icontext">
+                                <span class="fa fa-check"></span>
+                            </div>
+                        </div>
+                        <div class="item text-center">
+                            <div>
+                                <span class="fa fa-language bigicon"></span>
+                            </div>
+                            <div class="icontext">
+                                International
+                            </div>
+                            <div class="icontext">
+                                <span class="fa fa-close"></span>
+                            </div>
+                        </div>
+                        <div class="item text-center">
+                            <div>
+                                <span class="fa fa-language bigicon"></span>
+                            </div>
+                            <div class="icontext">
+                                International
+                            </div>
+                            <div class="icontext">
+                                <span class="fa fa-check"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-2 col-xs-4">
+            <div id="tile6" class="tile">
+                <div class="carousel slide" data-ride="carousel">
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active text-center">
+                            <div>
+                                <span class="fa fa-wifi bigicondark"></span>
+                            </div>
+                            <div class="icontextdark">
+                                Wifi
+                            </div>
+                            <div class="icontextdark">
+                                <span class="fa fa-check"></span>
+                            </div>
+                        </div>
+                        <div class="item text-center">
+                            <div>
+                                <span class="fa fa-wifi bigicondark"></span>
+                            </div>
+                            <div class="icontextdark">
+                                Wifi
+                            </div>
+                            <div class="icontextdark">
+                                <span class="fa fa-close"></span>
+                            </div>
+                        </div>
+                        <div class="item text-center">
+                            <div>
+                                <span class="fa fa-wifi bigicondark"></span>
+                            </div>
+                            <div class="icontextdark">
+                                Wifi
+                            </div>
+                            <div class="icontextdark">
+                                <span class="fa fa-check"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

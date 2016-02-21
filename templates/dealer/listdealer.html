@@ -1,0 +1,30 @@
+<h1>Dealer List</h1>
+
+<table class="table table-striped table-bordered table-hover">
+  <thead>
+    <tr>
+      <th>Dealer Id</th>
+      <th>Name</th>
+      <th>mobile</th>
+      <th>email</th>
+     
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="dealer in dealers" ng-click="edit(dealer)">
+      <td>{{dealer.del_id}}</td>
+      <td>{{dealer.name}}</td>
+      <td>{{dealer.mobile}}</td>
+      <td>{{dealer.email}}</td>
+     
+      
+      <td><a ng-href="#/dealer/edit/{{dealer.$id()}}"><i class="glyphicon glyphicon-edit"></i></a></td>
+    </tr>
+  </tbody> 
+</table>
+<div class="well">
+  <a class="btn btn-default" ng-href="#/dealer/new">New Dealer</a>
+</div>
+
+			

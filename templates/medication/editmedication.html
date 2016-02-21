@@ -1,0 +1,38 @@
+<form name="form">
+  <legend>Edit form</legend>
+  <div class="form-group">
+    <label>Medication Id</label>
+    <input type="text" ng-model="medication.med_id" class="form-control">
+  </div>
+  <div class="form-group">
+    <label>Name</label>
+    <input type="text" ng-model="medication.name" class="form-control">
+  </div>
+  <div class="form-group">
+    <label>Type</label>
+    <input type="text" ng-model="medication.type" class="form-control">
+  </div>
+  
+   <!--<div class="form-group">
+    <label for="dealers"> Dealer </label>
+    <select name="medications" id="medications" ng-model="medication.dealers" class="form-control">
+      <option ng-repeat="option in dealerList" value="{{option._id}}">{{option.name}}</option>
+    </select>-->
+    
+   <div class="form-group">
+       <label>Dealers</label>
+       <tags-input ng-model="medication.dealers" add-on-paste="true" display-property="name">
+       <auto-complete source="dealerList"></auto-complete>
+       </tags-input>
+    
+   </div> 
+      
+  </div>
+  
+  
+  <div class="well">
+    <a class="btn btn-primary" ng-click="save()" ng-disabled="!hasChanges()||form.$invalid">Save</a>
+    <a class="btn btn-warning" ng-href="#/medication/list">Abandon</a>
+    <a class="btn btn-danger" ng-click="remove()" ng-disabled="!medication.$id()">Remove</a>
+  </div>
+</form>
